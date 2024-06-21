@@ -1,18 +1,44 @@
-import { Image, Text, View } from "react-native";
-import {images} from "../constants"
+import { Image, ScrollView, Text, View } from "react-native";
+import { images } from "../constants"
 import bus1 from "../assets/images/bus1.jpg"
+import { SafeAreaView } from "react-native-safe-area-context";
+import CustomButton from "../components/CustomButton"
 
 export default function Index() {
-  console.log(images.bus1)
+  console.log("Started")
   return (
-    <View className="flex-1 justify-center items-center">
-      <Text>Hello</Text>
-      {/* <Image src={images.bus1} resizeMode="contain" /> */}
-      {/* <Image source={bus1} resizeMode="contain"  /> */}
-      
-      <Image className="w-full" source={images.bus2}  resizeMode="contain"      />
-      <Text>Buffalo</Text>
+    <SafeAreaView className="border bg-white h-full">
+      {/* <ScrollView> */}
 
-    </View>
+        {/* Main Container */}
+        <View className="flex-1 items-center">
+
+
+          {/* Header Image */}
+          <Image
+            className="w-[500px] h-[300px] mt-[10vh]"
+            resizeMode="contain"
+            source={images.bus2} />
+
+
+          {/* Heading */}
+          <View className="w-full flex-1 justify-between m-2 items-center">
+
+            <View className=" pl-4 w-full">
+              <Text className="pt-2 text-5xl font-pbold">BookMyBus</Text>
+              <Text className="text-lg font-fsemibold opacity-50">Only Ticket Booking App you need !!</Text>
+            </View>
+
+
+            <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => { }} />
+
+          </View>
+
+
+
+        </View>
+
+
+    </SafeAreaView>
   );
 }
