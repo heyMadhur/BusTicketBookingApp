@@ -21,7 +21,8 @@ export default function Index() {
             <Text className="pt-2 text-5xl font-pbold">BookMyBus</Text>
             <Text className="text-lg font-fsemibold opacity-50">Only Ticket Booking App you need !!</Text>
           </View>
-          <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => router.push('sign-in')} />
+          {/* <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => router.push('sign-in')} /> */}
+          <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => router.push('ticket')} />
         </View>
       </View>
     </SafeAreaView>

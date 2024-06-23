@@ -1,5 +1,5 @@
-// import icons from "./icons";
+import icons from "./icons";
 import images from "./images";
 
-// export { icons, images };
-export { images };
+export { icons, images };
+// export { images };

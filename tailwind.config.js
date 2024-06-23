@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#82b479",
+        primary: "#0083f3",
         secondary: {
           DEFAULT: "#82b479",
           "light": "#a8d2a0",
@@ -17,10 +17,10 @@ module.exports = {
         gray: {
           100: "#CDCDE0",
         },
-        red: "#E92232",
-        green: "#00994A",
-        blue: "#0083F3",
-        elecGreen: "#00BDC0"
+        blue: { DEFAULT: "#0083F3" },
+        green: { DEFAULT: "#00994A" },
+        red: { DEFAULT: "#E92232" },
+        elecGreen: { DEFAULT: "#00BDC0" }
       },
       fontFamily: {
         pthin: ["Poppins-Thin", "sans-serif"],
