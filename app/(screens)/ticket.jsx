@@ -3,8 +3,6 @@ import React from 'react'
 import FullTicket from '../../components/FullTicket'
 import data from "../../testdata/data"
 
-console.log(data['ticket-1'].color)
-
 
 const Ticket = () => {
   return (

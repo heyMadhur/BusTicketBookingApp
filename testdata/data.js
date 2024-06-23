@@ -9,6 +9,6 @@ export default data = {
         "booking_time": "07:03 PM",
         "starting_stop": "ITO",
         "ending_stop": "Noida Sector 37",
-        "color": "blue"
+        "color": "red"
     },
 }

@@ -1,12 +1,14 @@
-import { Image, ScrollView, Text, View } from "react-native";
+import { Image, Text, View } from "react-native";
 import { images } from "../constants"
 import { SafeAreaView } from "react-native-safe-area-context";
 import CustomButton from "../components/CustomButton"
 import { router } from "expo-router";
 
+const a = 1
 export default function Index() {
   return (
     <SafeAreaView className="bg-white h-full">
+
       {/* Main Container */}
       <View className="flex-1 items-center">
         {/* Header Image */}
@@ -22,7 +24,7 @@ export default function Index() {
             <Text className="text-lg font-fsemibold opacity-50">Only Ticket Booking App you need !!</Text>
           </View>
           {/* <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => router.push('sign-in')} /> */}
-          <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => router.push('ticket')} />
+          <CustomButton title={"Let's get you Started!"} containerStyles={"mb-4 w-[90vw]"} handlePress={() => router.push('home')} />
         </View>
       </View>
     </SafeAreaView>
