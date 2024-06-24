@@ -10,6 +10,8 @@ const ScreensLayout = () => {
             <Stack>
                 <Stack.Screen name="ticket" options={{headerShown: false}} />
                 <Stack.Screen name="home" options={{headerShown: false}} />
+                <Stack.Screen name="booking1" options={{headerShown: false}} />
+                <Stack.Screen name="booking2" options={{headerShown: false}} />
             </Stack>
         </>
     )
